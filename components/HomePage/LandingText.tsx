@@ -5,7 +5,7 @@ const LandingText = () => {
     return (
         <div className=' w-full flex flex-col justify-center items-center gap-3'>
             <div>
-                <h2 className=' gap-5 max-w-full overflow-hidden text-center text-4xl font-black tracking-normal sm:text-5xl lg:text-7xl/[90px]  '>
+                <h2 className='  gap-5 max-w-full overflow-hidden text-center text-4xl font-black tracking-normal sm:text-5xl lg:text-7xl/[90px]  '>
                     Discover the most
                     <strong className="p-0.5 bg-[url('/Img/TechopsUnderline.svg')] bg-no-repeat bg-bottom m-2 ease-in-out transition-all delay-700 duration-700 ">
                         vibrant
@@ -18,7 +18,7 @@ const LandingText = () => {
                 </h2>
             </div>
             <div>
-                <h1 className='mx-auto max-w-full overflow-hidden  md:text-4xl   sm:text-2xl lg:max-w-screen-md text-slate-400  p-4 text-center font-bold from-black hover:from-slate-400 via-stone-500 to-gray-600 bg-gradient-to-r bg-clip-text text-transparent '>
+                <h1 className='mx-auto max-w-full overflow-hidden  md:text-4xl   sm:text-2xl lg:max-w-screen-md text-slate-400  p-4 text-center font-bold  from-yellow-500 hover:from-yellow-400 via-stone-500 to-yellow-200 bg-gradient-to-r bg-clip-text text-transparent '>
                     Find your next meetup.
                 </h1>
             </div>
