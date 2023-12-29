@@ -14,7 +14,7 @@ const Navbar = () => {
                             <span className=''>
                                 t
                             </span>
-                            <span className=" text-4xl uppercase text-yellow-500 bg-[url('/Img/TechopsUnderline.svg')] bg-no-repeat bg-bottom" >
+                            <span className=" subpixel-antialiased text-muted  text-3xl uppercase text-yellow-500 bg-[url('/Img/TechopsUnderline.svg')] bg-no-repeat bg-bottom" >
                                 e
                             </span>
                             <span>
