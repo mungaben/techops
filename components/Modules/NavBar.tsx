@@ -11,7 +11,20 @@ const Navbar = () => {
                 <div>
                     <h2 className='font-bold text-3xl  text-gray-900 dark:text-white'>
                         <Link href="/" >
-                            Techops
+                            <span className=''>
+                                t
+                            </span>
+                            <span className=" text-4xl uppercase text-yellow-500 bg-[url('/Img/TechopsUnderline.svg')] bg-no-repeat bg-bottom" >
+                                e
+                            </span>
+                            <span>
+                                ch
+                            </span>
+                            <span className=' capitalize'>
+                                Ops
+                            </span>
+
+
                         </Link>
                     </h2>
 

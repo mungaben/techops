@@ -5,7 +5,7 @@ const LandingText = () => {
     return (
         <div className=' w-full flex flex-col justify-center items-center gap-3'>
             <div>
-                <h2 className='  gap-5 max-w-full overflow-hidden text-center text-4xl font-black tracking-normal sm:text-5xl lg:text-7xl/[90px]  '>
+                <h2 className=' text-teal-500/95  gap-5 max-w-full overflow-hidden text-center text-4xl font-black tracking-normal sm:text-5xl lg:text-7xl/[90px]  '>
                     Discover the most
                     <strong className="p-0.5 bg-[url('/Img/TechopsUnderline.svg')] bg-no-repeat bg-bottom m-2 ease-in-out transition-all delay-700 duration-700 ">
                         vibrant
