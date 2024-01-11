@@ -6,6 +6,7 @@ import React from 'react'
 
 
 const Course = () => {
+  
   return (
     <div className=' mt-10 w-full '>
       <Carousel>

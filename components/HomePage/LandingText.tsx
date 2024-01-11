@@ -2,18 +2,30 @@
 
 
 
-import React from 'react'
+import React, { useState } from 'react'
 import SpinningButton from '../Modules/SpinningButton'
 import { useInView } from 'react-intersection-observer';
 import { cn } from '@/lib/utils';
+import { set } from 'sanity';
 
 const LandingText = () => {
+    const [MouseEnter, setMouseEnter] = useState(false)
     const [ref, inView] = useInView({
         threshold: [0.2, 0.5, 0.7, 0.9],
         triggerOnce: false,
         delay: 100,
 
     });
+
+
+
+    const MouseEntered = () => {
+
+        setMouseEnter(true)
+    }
+    const MouseLeft = () => {
+        setMouseEnter(false)
+    }
     return (
         <div className=' w-full flex flex-col justify-center items-center gap-1'>
             <div className={cn(inView ? "0 " : "-mt-100")}
@@ -34,9 +46,11 @@ const LandingText = () => {
                     <span className='ease-in-out transition-all delay-700 duration-700 hover:text-red-500/20 '>.</span>
                 </h2>
             </div>
-            <div>
+            <div onMouseEnter={MouseEntered}
+                onMouseLeave={MouseLeft}
+            >
                 <h1 className='mx-auto max-w-full overflow-hidden  md:text-4xl   sm:text-2xl lg:max-w-screen-md text-slate-400  p-2 text-center font-bold  from-yellow-500 hover:from-yellow-400 via-stone-500 to-yellow-200 bg-gradient-to-r bg-clip-text text-transparent '>
-                    Find your next meetup.
+                    Find your next meet<span >{MouseEnter ? "ing" : "up"}</span>.
                 </h1>
             </div>
             <div className=' mt-5'>
