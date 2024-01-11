@@ -6,10 +6,14 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'id',
-      title: 'ID',
-      type: 'number',
-    }),
+        name: 'slug',
+        title: 'Slug',
+        type: 'slug',
+        options: {
+          source: 'title',
+          maxLength: 96,
+        },
+      }),
     defineField({
       name: 'title',
       title: 'Title',

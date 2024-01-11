@@ -26,7 +26,7 @@ const Navbar = () => {
         }
     });
     return (
-        <header className="h-15 w-full   top-0     shadow-sm dark:border-gray-700 flex justify-center     ">
+        <header className="h-15 w-full   top-0 z-50     shadow-sm dark:border-gray-700 flex justify-center     ">
             <motion.div variants={{
                 hidden: { opacity: 0, y: -100, display: "none" },
                 visible: { opacity: 1, y: 0 },
