@@ -80,6 +80,8 @@ export async function GET(res: NextResponse, req: NextResponse) {
             commentPublishedAt,
         },
     }`);
+    console.log(courseData);
+    
     return NextResponse.json({
         courseData: courseData
     })
