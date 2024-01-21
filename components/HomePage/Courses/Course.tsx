@@ -14,7 +14,7 @@ const Course = () => {
   const [CourseData, setCourseData] = useState<CourseDatas[]>()
 
   const data = async () => {
-    const res = await fetch('api/CourseData')
+    const res = await fetch('api/CourseData',{cache:'no-cache'})
     const data = await res.json()
     console.log("coursedata",data.courseData)
     setCourseData(data.courseData)
