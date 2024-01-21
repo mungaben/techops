@@ -9,10 +9,10 @@
 // response with image, course data , slugs and explanantion
 
 import { client } from "@/sanity/lib/client";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 
-export async function GET(res: NextResponse, req: NextResponse) {
+export async function GET(res: NextRequest, req: NextResponse) {
 
     const courseData = await client.fetch(`*[_type == "courseData"]{
         title,
