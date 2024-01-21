@@ -1,11 +1,11 @@
 import React from 'react'
 
-type  ButtonText={
-    text:string
+type ButtonText = {
+    text: string
 
 }
 
-const SpinningButton:React.FC<ButtonText> = ({text}) => {
+const SpinningButton: React.FC<ButtonText> = ({ text }) => {
     return (
         <div>
             <button className="group relative mx-auto inline-flex items-center overflow-hidden rounded-full bg-teal-500 px-8 py-3 transition">
