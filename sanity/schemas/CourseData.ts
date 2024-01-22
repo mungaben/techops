@@ -120,6 +120,13 @@ export default defineType({
       type: 'reference',
       to: [{ type: 'courseComment' }],
     }),
+    // tags
+    defineField({
+      name: 'tags',
+      title: 'Tags',
+      type: 'array',
+      of: [{ type: 'string' }],
+    }),
   ],
   preview: {
     select: {
